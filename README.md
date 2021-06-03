@@ -21,7 +21,7 @@ python dac.py -h
 ```
 # DAC Resources
 
-Download DAC-Resources [here](todo.com).
+Download DAC-Resources [here](https://www.dropbox.com/sh/ucpjfd3omjieu80/AAAvZynLtzvhyFx7_jwVhUK2a?dl=0).
 
 ## Contents:
   - Raw Datasets for MNIST, SYNAPSES, DISC_A, DISC_B
