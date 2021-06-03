@@ -1,6 +1,6 @@
 ## Installation
 
-```console
+```
 git clone https://github.com/DAC-Method/DAC.git
 cd DAC
 conda create --name dac --file conda_requirements.txt
@@ -20,14 +20,14 @@ Download DAC-Resources [here](todo.com).
   - Scripts to reproduce experimental results & train cycle GANs.
 
 ### Instructions
-1. Run attribution & mask extraction on already translated images (```dac_resources/data/translated/<experiment>```):
+  - Run attribution & mask extraction on already translated images (```dac_resources/data/translated/<experiment>```):
 
-```console
+```
 cd dac_resources
 python experiments/scripts/run_dac.py --config experiments/configs/<experiment>.ini --net <net>
 ```
 
-For experiment in [synapses, mnist, disc_1a, disc_1b], net in [VGG, RES]. Results will be stored in 
+For experiment in {synapses, mnist, disc_1a, disc_1b}, net in {VGG, RES}. Results will be stored in 
 ```
 experiments/results/<experiment>
 ```
@@ -38,9 +38,9 @@ the submit command and num_workers in the respective experiment config file at:
 experiments/configs/<experiment>.ini
 ```
 
-2. Visualize and calculate DAC scores:
+  - Visualize and calculate DAC scores:
 
-```console
+```
 python experiments/scripts/plot_dac.py --result_dir experiments/results/<experiment> --experiment <experiment> --net <net>
 ```
 Plots will be stored at 
@@ -50,4 +50,4 @@ Plots will be stored at
 AUC scores for each method shown in console.
    
 
-3. Train cycle GANs and generate translated dataset from scratch:
+  - Train cycle GANs and generate translated dataset from scratch:
