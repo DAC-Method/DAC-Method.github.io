@@ -9,6 +9,16 @@ pip install -r pip_requirements.txt
 pip install .
 ```
 
+## Usage
+Get attribution and masks for any image pair:
+```
+python dac.py --net <net> --checkpoint <net_checkpoint> --input_shape <dx> <dy> --realimg <real_img_path> --fakeimg <fake_img_path> --realclass <real_class_idx> --fakeclass <fake_class_idx> --downsample_factors <d0 d1 d2 ...> --output_classes <N_output_classes> --<attribution_method_0> --<attribution_method_1> ...
+```
+
+For all flags, see:
+```
+python dac.py -h
+```
 # DAC Resources
 
 Download DAC-Resources [here](todo.com).
