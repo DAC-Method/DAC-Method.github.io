@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 ```
 git clone https://github.com/DAC-Method/DAC.git
@@ -9,18 +9,18 @@ pip install -r pip_requirements.txt
 pip install .
 ```
 
-## DAC Resources
+# DAC Resources
 
 Download DAC-Resources [here](todo.com).
 
-### Contents:
+## Contents:
   - Raw Datasets for MNIST, SYNAPSES, DISC_A, DISC_B
   - Translated and processed datasets for MNIST, SYNAPSES, DISC_A, DISC_B
   - Checkpoints and architecture specifications for all networks.
   - Scripts to reproduce experimental results & train cycle GANs.
 
-### Instructions
-  - Run attribution & mask extraction on already translated images (```dac_resources/data/translated/<experiment>```):
+## Instructions
+### Run attribution & mask extraction on already translated images
 
 ```
 cd dac_resources
@@ -38,7 +38,7 @@ the submit command and num_workers in the respective experiment config file at:
 experiments/configs/<experiment>.ini
 ```
 
-  - Visualize and calculate DAC scores:
+### Visualize and calculate DAC scores
 
 ```
 python experiments/scripts/plot_dac.py --result_dir experiments/results/<experiment> --experiment <experiment> --net <net>
@@ -50,4 +50,4 @@ Plots will be stored at
 AUC scores for each method shown in console.
    
 
-  - Train cycle GANs and generate translated dataset from scratch:
+### Train cycle GANs and generate translated datasets from scratch
