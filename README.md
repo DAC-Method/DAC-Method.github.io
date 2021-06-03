@@ -4,6 +4,7 @@
 git clone https://github.com/DAC-Method/DAC.git
 cd DAC
 conda create --name dac --file conda_requirements.txt
+conda activate dac
 pip install -r pip_requirements.txt
 pip install .
 ```
