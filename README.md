@@ -15,9 +15,21 @@ Download DAC-Resources [here](todo.com).
 
 ## Contents:
   - Raw Datasets for MNIST, SYNAPSES, DISC_A, DISC_B
-  - Translated and processed datasets for MNIST, SYNAPSES, DISC_A, DISC_B
-  - Checkpoints and architecture specifications for all networks.
-  - Scripts to reproduce experimental results & train cycle GANs.
+    ```
+    dac_resources/data/raw/<experiment>
+    ```
+  - Cycle GAN translated and filtered datasets for MNIST, SYNAPSES, DISC_A, DISC_B
+    ```
+    dac_resources/data/translated/<experiment>
+    ```
+  - Checkpoints for all networks.
+    ```
+    dac_resources/data/checkpoints/<experiment>
+    ```
+  - Scripts to reproduce experimental results.
+    ```
+    dac_resources/data/experiments/scripts
+    ```
 
 ## Instructions
 ### Run attribution & mask extraction on already translated images
