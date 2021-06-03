@@ -52,12 +52,10 @@ AUC scores for each method shown in console.
 
 ### Train cycle GANs and generate translated datasets from scratch
 - Create paired dataset:
-
 ```
 cd dac
 python cycle_gan/prepare_dataset.py --data_dir <Path to raw dataset dir> --classes <List of classes>
 ```
-
 E.g. for disc_a:
 ```
 python cycle_gan/prepare_dataset.py --data_dir ../dac_resources/data/raw/disc_a --classes 0,1
