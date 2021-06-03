@@ -28,7 +28,9 @@ python experiments/scripts/run_dac.py --config experiments/configs/<experiment>.
 ```
 
 For experiment in [synapses, mnist, disc_1a, disc_1b], net in [VGG, RES]. Results will be stored in 
-```experiments/results/<experiment>```
+```
+experiments/results/<experiment>
+```
 
 Default behaviour is to run the script locally using only a single worker. This can be changed via editing 
 the submit command and num_workers in the respective experiment config file at:
