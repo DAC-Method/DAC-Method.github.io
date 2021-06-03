@@ -15,4 +15,9 @@ Download DAC-Resources [here](todo.com).
 ### Contents:
   - Raw Datasets for MNIST, SYNAPSES, DISC_A, DISC_B
   - Translated and processed datasets for MNIST, SYNAPSES, DISC_A, DISC_B
-  - Scripts to reproduce experimental results
+  - Scripts to reproduce experimental results & train cycle GANs.
+
+### Instructions
+1. Run attribution & mask extraction on already translated images:
+
+3. Train cycle GANs and generate translated dataset:
