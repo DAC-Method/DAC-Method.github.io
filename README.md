@@ -58,7 +58,7 @@ python cycle_gan/prepare_dataset.py --data_dir <Path to raw dataset dir> --class
 ```
 E.g. for disc_a:
 ```
-python cycle_gan/prepare_dataset.py --data_dir ../dac_resources/data/raw/disc_a --classes 0,1
+python cycle_gan/prepare_dataset.py --data_dir ../dac_resources/data/raw/disc_a --classes 0 1
 ```
 - Start training:
 ```
