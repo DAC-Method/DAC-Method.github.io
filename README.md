@@ -51,3 +51,24 @@ AUC scores for each method shown in console.
    
 
 ### Train cycle GANs and generate translated datasets from scratch
+- Create paired dataset:
+
+```
+cd dac
+python cycle_gan/prepare_dataset.py --data_dir <Path to raw dataset dir> --classes <List of classes>
+```
+
+E.g. for disc_a:
+```
+python cycle_gan/prepare_dataset.py --data_dir ../dac_resources/data/raw/disc_a --classes 0,1
+```
+- Start training:
+```
+python cycle_gan/start_training.py --experiment <experiment> --data_root <path to paired dataset>
+```
+
+- Translate images:
+```
+python cycle_gan/start_testing.py --experiment <experiment> --data_root <path to paired dataset> --aux_net <vgg/res> --aux_checkpoint <path to vgg/res checkpoint> --gan_checkpoint_dir <path to gan_checkpoint_dir>
+```
+
